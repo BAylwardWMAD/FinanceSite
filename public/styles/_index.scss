@@ -1,0 +1,47 @@
+.hero {
+    min-height: 600px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0)), url('../images/pexels-essow-936722.jpg') top right fixed no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    .hero-info {
+        width: 50%;
+        padding: 4rem;
+        margin-bottom: 4rem;
+        h1 {
+            font-size: clamp(2rem, 30vw, 3rem);
+        }
+        h3 {
+            font-size: clamp(1rem, 20vw, 2rem);
+        }
+        p {
+            font-size: clamp(1rem, 10vw, 1.2rem);
+            margin-top: 1rem;
+        }
+    }
+}
+
+.info-caption {
+    padding: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.info-cards {
+    width: 75%;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    .card {
+        border-radius: 15px;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+        }
+        .card-info {
+            padding: 0 1rem 1rem 1rem;
+        }
+    }
+}

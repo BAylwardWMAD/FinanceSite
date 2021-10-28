@@ -1,0 +1,35 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    #logo {
+        padding: .5rem;
+        max-height: 100px;
+    }
+    .navList,
+    .login-register {
+        list-style: none;
+        display: flex;
+        a {
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .navList {
+        justify-content: space-evenly;
+        width: 50%;
+    }
+    .login-register {
+        margin-right: 1rem;
+        li {
+            margin: 0 .2rem;
+        }
+    }
+}

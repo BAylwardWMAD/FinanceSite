@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem;
+  background: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.navBar #logo {
+  padding: .5rem;
+  max-height: 100px;
+}
+
+.navBar .navList,
+.navBar .login-register {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navBar .navList a,
+.navBar .login-register a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navBar .navList a:hover,
+.navBar .login-register a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.navBar .navList {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 50%;
+}
+
+.navBar .login-register {
+  margin-right: 1rem;
+}
+
+.navBar .login-register li {
+  margin: 0 .2rem;
+}
+
+.hero {
+  min-height: 600px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, white), to(rgba(255, 255, 255, 0))), url("../images/pexels-essow-936722.jpg") top right fixed no-repeat;
+  background: linear-gradient(90deg, white 10%, rgba(255, 255, 255, 0)), url("../images/pexels-essow-936722.jpg") top right fixed no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero-info {
+  width: 50%;
+  padding: 4rem;
+  margin-bottom: 4rem;
+}
+
+.hero .hero-info h1 {
+  font-size: clamp(2rem, 30vw, 3rem);
+}
+
+.hero .hero-info h3 {
+  font-size: clamp(1rem, 20vw, 2rem);
+}
+
+.hero .hero-info p {
+  font-size: clamp(1rem, 10vw, 1.2rem);
+  margin-top: 1rem;
+}
+
+.info-caption {
+  padding: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.info-cards {
+  width: 75%;
+  margin: 1rem auto;
+  margin-bottom: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+.info-cards .card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.info-cards .card img {
+  max-width: 100%;
+}
+
+.info-cards .card .card-info {
+  padding: 0 1rem 1rem 1rem;
+}
+
+footer {
+  border-top: 1px solid #000;
+  border-radius: 40px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+}
+
+footer .footer-section {
+  text-align: center;
+}
+
+footer .footer-section p {
+  font-size: .8rem;
+}
+
+footer .footer-section a i {
+  font-size: 2rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.3;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */

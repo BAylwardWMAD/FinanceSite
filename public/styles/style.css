@@ -86,14 +86,14 @@
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
-  top: 7px;
+  top: 12px;
 }
 
 .navBar .hamburger .line2 {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   position: absolute;
-  bottom: 6px;
+  bottom: 11px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -145,42 +145,14 @@
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  .navBar .login-register {
-    margin-right: 1rem;
-  }
-  .navBar .login-register li {
-    margin: 0 .2rem;
-  }
   .navBar .hamburger {
     display: block;
-    z-index: 99;
-    width: 2em;
-    height: 2em;
-    position: relative;
-    cursor: pointer;
   }
-  .navBar .hamburger .hamburger_line {
-    height: 2px;
-    border-radius: 50px;
-    width: 100%;
-    background-color: #000;
-    margin: 8px 0;
-    -webkit-transition: -webkit-transform ease-in-out 300ms;
-    transition: -webkit-transform ease-in-out 300ms;
-    transition: transform ease-in-out 300ms;
-    transition: transform ease-in-out 300ms, -webkit-transform ease-in-out 300ms;
-  }
-  .navBar .hamburger .line1 {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    position: absolute;
-    top: 12px;
-  }
-  .navBar .hamburger .line2 {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    position: absolute;
-    bottom: 11px;
+}
+
+@media only screen and (max-width: 500px) {
+  .navBar .navList {
+    width: 80%;
   }
 }
 
@@ -206,18 +178,31 @@
 }
 
 .hero .hero-info h1 {
-  font-size: clamp(2rem, 30vw, 4rem);
+  font-size: clamp(2.5rem, 4vw, 4rem);
   font-weight: 300;
 }
 
 .hero .hero-info h3 {
-  font-size: clamp(1rem, 20vw, 1.5rem);
+  font-size: clamp(1.2rem, 1.3vw, 2rem);
   font-weight: 400;
 }
 
 .hero .hero-info p {
-  font-size: clamp(1rem, 10vw, 1.2rem);
+  font-size: clamp(1rem, 1vw, 1.2rem);
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .hero .hero-info {
+    padding: 2rem 1rem;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero .hero-info {
+    width: 100%;
+  }
 }
 
 .info-caption {
@@ -296,6 +281,23 @@ footer .footer-section {
   text-align: center;
 }
 
+footer .footer-section h3 {
+  position: relative;
+  margin-bottom: .5rem;
+}
+
+footer .footer-section h3::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: #000;
+}
+
 footer .footer-section p {
   font-size: .8rem;
 }
@@ -311,6 +313,105 @@ footer .footer-section a:hover {
 
 footer .footer-section a i {
   font-size: 2rem;
+}
+
+.l_r-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.l_r-container p {
+  text-align: center;
+}
+
+.l_r-container form {
+  margin: 3rem;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l_r-container form .input-group {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l_r-container form .input-group input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 15px;
+  padding: 1rem .8rem 0 .5rem;
+  margin: .5rem 0;
+}
+
+.l_r-container form .input-group #email {
+  width: 80%;
+}
+
+.l_r-container form button {
+  font-family: 'Montserrat', sans-serif;
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+  background-color: #1c50e0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  min-width: 100px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.l_r-container form button:hover {
+  background-color: #39aef1;
+  font-weight: 600;
+  color: #000;
+}
+
+@media only screen and (max-width: 800px) {
+  .l_r-container {
+    width: 100%;
+    padding: 0;
+  }
+  .l_r-container form {
+    margin: 1rem 0;
+  }
+  .l_r-container form .input-group {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .l_r-container form .input-group input {
+    padding: 0;
+    margin: 0;
+  }
+  .l_r-container form button {
+    padding: .5rem 1rem;
+    min-width: 100px;
+  }
+  .l_r-container p {
+    margin: 1rem 0;
+  }
 }
 
 *,

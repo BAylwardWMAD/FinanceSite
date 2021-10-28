@@ -14,6 +14,11 @@ footer {
             font-size: .8rem;
         }
         a {
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                color: rgb(28, 80, 224);
+            }
             i {
                 font-size: 2rem;
             }

@@ -1,9 +1,11 @@
 <div class="finances-container">
     <div class="personal-col">
         <h3>Monthly Income</h3>
-        <h3 id="monthlyIncome" class="financeAmts">$5500.00</h3>
+        <h3 class="financeAmts monthlyIncome">$5500.00</h3>
         <h3>Monthly Expenses:</h3>
-        <h3 id="monthlyExpense" class="financeAmts">$5000.00</h3>
+        <h3 class="financeAmts monthlyExpense">$5000.00</h3>
+        <h3>Remaining Income:</h3>
+        <h3 class="financeAmts remainingIncome">$500.00</h3>
         <br>
         <h3>Expenses Overview:</h3>
         <table>
@@ -37,7 +39,40 @@
         <a href="#" id="detailedExp">See detailed list of monthly expenses</a>  
     </div>
     <div class="main-finances">
-        <h1>Finances</h1>
+        <div class="detailed-expense-view">
+            <h2>Monthly Income</h2>
+            <h2 class="financeAmts monthlyIncome">$5500.00</h2>
+            <h2>Monthly Expenses:</h2>
+            <h2 class="financeAmts monthlyExpense">$5000.00</h2>
+            <h2>Remaining Income:</h2>
+            <h2 class="financeAmts remainingIncome">$500.00</h2>
+            <table>
+            <tr>
+                <th>Name</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td>Mortgage</td>
+                <td>$1200.00</td>
+            </tr>
+            <tr>
+                <td>Car Loan</td>
+                <td>$300.00</td>
+            </tr>
+            <tr>
+                <td>Internet</td>
+                <td>$150.00</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>$150.00</td>
+            </tr>
+            <tr>
+                <td>Gas</td>
+                <td>$200.00</td>
+            </tr>
+        </table>
+        </div>
         <div id="piechart"></div>
     </div>
 </div>

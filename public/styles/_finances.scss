@@ -2,6 +2,9 @@
     padding: 0;
     display: flex;
     min-height: 100vh;
+    .financeAmts {
+        font-weight: 300;
+    }
     .personal-col {
         display: flex;
         flex-direction: column;
@@ -46,9 +49,21 @@
         }
     }
     .main-finances {
+        display: flex;
+        justify-content: space-around;
+        padding: 5rem;
         width: 80%;
         h1 {
             text-align: center;
+        }
+        .detailed-expense-view {
+            table {
+                margin-top: 3rem;
+                font-size: 1.5rem;
+                * {
+                    padding: 0 2rem;
+                }
+            }
         }
     }
 }

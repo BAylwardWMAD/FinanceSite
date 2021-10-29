@@ -422,6 +422,10 @@ footer .footer-section a i {
   min-height: 100vh;
 }
 
+.finances-container .financeAmts {
+  font-weight: 300;
+}
+
 .finances-container .personal-col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,11 +487,86 @@ footer .footer-section a i {
 }
 
 .finances-container .main-finances {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5rem;
   width: 80%;
 }
 
 .finances-container .main-finances h1 {
   text-align: center;
+}
+
+.finances-container .main-finances .detailed-expense-view table {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+.finances-container .main-finances .detailed-expense-view table * {
+  padding: 0 2rem;
+}
+
+.calc-title {
+  text-align: center;
+}
+
+.calc-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 3rem auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 60vh;
+}
+
+.calc-container .calc-form {
+  width: 30%;
+}
+
+.calc-container .calc-form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.calc-container .calc-form form input,
+.calc-container .calc-form form select,
+.calc-container .calc-form form label {
+  font-family: 'Montserrat', sans-serif;
+  margin: .5rem 0;
+}
+
+.calc-container .calc-form form input,
+.calc-container .calc-form form select {
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 0 .8rem 0 .5rem;
+  margin: .5rem 0;
+}
+
+.calc-container .calc-form form label {
+  font-size: 1.2rem;
+}
+
+.calc-container .calc-img {
+  width: 40%;
+}
+
+.calc-container .calc-img img {
+  border-radius: 20px;
+}
+
+.calc-container .output-calc-data {
+  border: thin solid #000;
+  width: 25%;
 }
 
 *,
